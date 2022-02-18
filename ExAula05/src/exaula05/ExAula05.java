@@ -2,24 +2,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package pooaula04;
+package exaula05;
 
 /**
  *
  * @author thayrone
  */
-public class PooAula04 {
+public class ExAula05 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Caneta c1 = new Caneta("Bic", "Vermelha", 0.5f);
-
-        c1.status();
-        Caneta c2 = new Caneta("Nankin", "Preta", 0.4f);
-        c2.destampar();
-        c2.status();
+        // TODO code application logic here
+        ContaBanco c1 = new ContaBanco(1, "CC", "joão");
+        c1.mostraConta();
+        System.out.println("____________________________________");
+        c1.abrirConta("CC");
+        c1.mostraConta();
     }
 
 }

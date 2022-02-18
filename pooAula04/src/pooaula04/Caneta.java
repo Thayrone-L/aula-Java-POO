@@ -15,12 +15,21 @@ public class Caneta {
     private boolean tampada;
     private String cor;
 
+    public Caneta(String modelo, String cor, float ponta) {
+        setModelo(modelo);
+        setPonta(ponta);
+        tampar();
+        setCor(cor);
+    }
+    
+    
+
     public void status() {
         System.out.println("Sobre a caneta:");
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Ponta: " + this.ponta);
         System.out.println("Cor: " + this.cor);
-        System.out.println("Tampada?: " + this.tampada);
+        System.out.println("Tampada: " + this.tampada);
     }
 
     public void tampar() {
